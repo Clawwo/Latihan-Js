@@ -1,0 +1,115 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+h1, h2, h3 {
+    color: #2c3e50; /* Warna judul */
+}
+
+hr {
+    height: 2px;
+    color: black;
+    background-color: black;
+    width: 95%;
+    margin: 20px 0; /* Jarak atas dan bawah */
+}
+
+.title {
+  font-size: 2em;
+}
+
+.contents {
+    margin: 20px;
+    width: 90%; /* Lebar konten */
+    max-width: 1200px; /* Lebar maksimum */
+    margin-top: 3rem;
+}
+
+.child-content {
+    border: 2px solid #34495e; /* Warna border */
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 20px; /* Padding di dalam konten */
+    margin-bottom: 20px; /* Jarak antar konten */
+    background-color: #ecf0f1; /* Warna latar belakang konten */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
+}
+
+.button, .answer-button {
+    background-color: #3498db; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Tanpa border */
+    margin: 1.5rem 0 0 0;
+    border-radius: 5px; /* Sudut melengkung tombol */
+    padding: 10px 20px; /* Padding tombol */
+    font-size: 120%; /* Ukuran font tombol */
+    cursor: pointer; /* Kursor tangan saat hover */
+    transition: background-color 0.3s; /* Transisi saat hover */
+}
+
+.button:hover, .answer-button:hover {
+    background-color: #2980b9; /* Warna saat hover */
+}
+
+.answer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.answer-button {
+    margin: 10px; /* Margin antar tombol */
+    width: 60px; /* Lebar tombol */
+}
+
+.wrong-answer {
+    margin-top: 2rem;
+}
+
+.victory {
+    font-weight: 20rem;
+    margin-bottom: 12px;
+    color: green;
+}
+.victory-message {
+    margin-bottom: 1rem;
+}
+
+#total-stats {
+    float: right;
+    width: 40%;
+}
+
+#gameboard {
+    float: left;
+    width: 55%;
+}
+
+#session-stats {
+    float: left;
+    margin-top: 20px; /* Jarak atas */
+    width: 55%;
+}
+
+.attempts {
+  margin-top: 1rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    #total-stats, #gameboard, #session-stats {
+        float: none; /* Menghilangkan float pada layar kecil */
+        width: 100%; /* Lebar 100% */
+    }
+}
